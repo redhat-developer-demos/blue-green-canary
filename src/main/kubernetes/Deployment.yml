@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: blue-green-canary
-  name: green
+  name: <will be updated>
 spec:
   replicas: 2
   selector:

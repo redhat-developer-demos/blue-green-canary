@@ -1,4 +1,4 @@
 #!/bin/bash
 
-kubectl -n one delete pods --field-selector=status.phase=Succeeded 
-kubectl -n one delete pods --field-selector=status.phase=Failed
+kubectl delete pods --field-selector=status.phase=Succeeded 
+kubectl delete pods --field-selector=status.phase=Failed
