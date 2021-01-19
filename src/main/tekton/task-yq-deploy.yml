@@ -34,7 +34,7 @@ spec:
     #   image: fedora
     #   command: ["cat", "$(inputs.params.kubernetesResourceFile)"]
     - name: set-color
-      image: docker.io/mikefarah/yq
+      image: mikefarah/yq:2.4.2
       script: |
         #!/bin/sh
         yq w -i "$YAML_SRC_DIR/Deployment.yml" 'metadata.name' $APP_NAME
